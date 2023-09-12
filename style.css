@@ -1,0 +1,53 @@
+* {
+    font-family: roboto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer, .hero {
+    background-color: #1F2937;
+    color: white;
+}
+
+.header, .hero {
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.link-container {
+    display: flex;
+    
+}
+
+.hero-content {
+    width: 300px;
+    height: 300px;
+}
+
+.hero > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.signup {
+    height: 25px;
+    width: 90px;
+    color: white;
+    background-color: #3882f6;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
