@@ -7,12 +7,20 @@ body {
     flex-direction: column;
 }
 
-.header, .footer, .hero {
+.section:not(#hero-section) {
+    padding: 15px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 300px;
+}
+
+#header-section, #footer-section, #hero-section {
     background-color: #1F2937;
     color: white;
 }
 
-.header, .hero {
+#header-container, #hero-container {
     padding: 15px 100px;
     display: flex;
     justify-content: space-between;
@@ -22,21 +30,68 @@ body {
 
 .link-container {
     display: flex;
-    
+    gap: 16px;
 }
 
-.hero-content {
+.hero {
     width: 300px;
-    height: 300px;
+    height: 200px;
 }
 
-.hero > div {
+.hero-primary {
+    font: 48px extra-bold #F9FAF8;
+}
+
+.hero-secondary {
+    font: 18px #E5E7EB;
+}
+
+.info-container, .quote-container {
+    width: 500px;
+}
+
+.info-container {
+    text-align: center;
+}
+
+.info-content {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer {
+.info-item {
+    height: 100px;
+    width: 100px;
+}
+
+#quote-section {
+    background-color: #E5E7EB;
+}
+
+.quote-text {
+    font: italic normal 36px;
+    color: #1F2937;
+}
+
+.quote-source {
+    font-weight: bold;
+    text-align: right;
+}
+
+#action-section {
+    padding: 65px 50px;
+}
+
+#action-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,8 +101,18 @@ button.signup {
     height: 25px;
     width: 90px;
     color: white;
-    background-color: #3882f6;
     border-radius: 8px;
     font-weight: bold;
     border: none;
+    flex: 0;
+}
+
+button.signup#action-signup {
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+}
+
+button.signup, #action-container {
+    background-color: #3882f6;
 }
